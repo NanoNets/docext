@@ -16,7 +16,7 @@ def parse_args():
     parser.add_argument(
         "--vlm_server_host",
         type=str,
-        default="0.0.0.0",
+        default="127.0.0.1",
         help="Host for the vLLM/OLLAMA server",
     )
     parser.add_argument(

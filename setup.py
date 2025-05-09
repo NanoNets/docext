@@ -8,7 +8,7 @@ with open("requirements.txt") as f:
 
 setup(
     name="docext",
-    version="0.1.10",
+    version="0.1.12",
     author="Souvik Mandal",
     author_email="souvik@nanonets.com",
     description="Onprem information extraction from documents",

@@ -1,10 +1,11 @@
 <h1 align="center">docext</h1>
 
+
 <p align="center"><em>An on-premises document information extraction and benchmarking toolkit.</em></p>
 
 <p align="center">
   <a href="https://pepy.tech/projects/docext">
-    <img src="https://static.pepy.tech/badge/docext/week" alt="PyPI Downloads" />
+    <img src="https://static.pepy.tech/badge/docext" alt="PyPI Downloads" />
   </a>
   <a href="https://opensource.org/licenses/Apache-2.0">
     <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License" />
@@ -12,7 +13,7 @@
   <a href="https://colab.research.google.com/drive/1r1asxGeezfWnJvw8jimfFAB2sGjk1HdM?usp=sharing">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
   </a>
-  <a>
+  <a href="https://pypi.org/project/docext/">
     <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/docext">
   </a>
 </p>
@@ -60,6 +61,7 @@ For setup instructions and additional details, check out the full feature guide 
   - Invoices
   - Passports
   - Add/delete new fields/columns for other templates.
+
 For more details on the features, please check out the [feature guide](https://github.com/NanoNets/docext/tree/main/docext/benchmark).
 
 ## About
