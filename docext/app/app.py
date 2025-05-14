@@ -182,7 +182,8 @@ def gradio_app(
         if model_name.startswith("hosted_vllm/")
         else hosted_model_url
     )
-
+    auth_user = os.getenv("GRADIO_USERNAME", "admin")
+    auth_pass = os.getenv("GRADIO_PASSWORD", "admin")
     with gr.Blocks() as demo:
         with gr.Tabs():
             with gr.Tab("Information Extraction from documents"):
@@ -207,7 +208,8 @@ def gradio_app(
                 )
         logger.info(f"Launching gradio app on port {gradio_port}")
         demo.launch(
-            auth=("admin", "admin"),
+            # auth=("admin", "admin"),
+            auth=(auth_user, auth_pass),
             share=not share,
             server_name="0.0.0.0",
             server_port=gradio_port,
