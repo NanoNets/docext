@@ -79,10 +79,15 @@ def get_tables_messages(
                     }
                     for filepath in filepaths
                 ],
+                # {
+                #     "type": "text",
+                #     "text": f"Return the table as an markdown table:\n {_get_tables_output_format(columns_names)}. If a cell is not found, return '' for that column. Do not give any explanation.",
+                # },
                 {
                     "type": "text",
-                    "text": f"Return the table as an markdown table:\n {_get_tables_output_format(columns_names)}. If a cell is not found, return '' for that column. Do not give any explanation.",
-                },
+                    "text": f"Return the table in markdown format (or JSON if possible). Example:\n {_get_tables_output_format(columns_names)}. If a cell is not found, return '' for that column. Do not give any explanation.",
+                }
+
             ],
         },
     ]
