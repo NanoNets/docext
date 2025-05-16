@@ -42,7 +42,11 @@ def sync_request(
     elif model_name.startswith("openrouter"):
         completion_args["response_format"] = format
     elif "gpt" in model_name.lower():
-        completion_args["response_format"] = {"type": "json_object"}
+        # Only set response_format if the prompt mentions "json"
+        if any("json" in m.get("text", "").lower() for m in messages if isinstance(m, dict)):
+            completion_args["response_format"] = {"type": "json_object"}
+        else:
+            print("⚠️ Skipped response_format=json_object — prompt didn't mention 'json'.")
 
     response = completion(**completion_args)
     return response.json()
