@@ -12,7 +12,7 @@ setup(
     author="Souvik Mandal",
     author_email="souvik@nanonets.com",
     description="Onprem information extraction from documents",
-    long_description=open("README.md").read(),
+    long_description=open("README.md", encoding='utf-8').read(),
     long_description_content_type="text/markdown",
     url="https://github.com/nanonets/docext",
     packages=find_packages(include=["docext", "docext.*"]),
