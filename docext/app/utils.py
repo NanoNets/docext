@@ -12,7 +12,7 @@ def cleanup(signum, frame, vllm_server):
 
 def check_vllm_healthcheck(host: str, port: int):
     try:
-        response = requests.get(f"http://{host}:{port}/healthcheck")
+        response = requests.get(f"https://{host}:{port}/healthcheck")
         return response.status_code == 200
     except Exception as e:
         return False
@@ -20,7 +20,7 @@ def check_vllm_healthcheck(host: str, port: int):
 
 def check_ollama_healthcheck(host: str, port: int):
     try:
-        response = requests.get(f"http://{host}:{port}")
+        response = requests.get(f"https://{host}:{port}")
         return response.status_code == 200
     except Exception as e:
         return False
