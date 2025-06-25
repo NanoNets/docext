@@ -34,4 +34,6 @@ RUN pip install --no-cache-dir flash-attn --no-build-isolation
 
 # Set working directory and entrypoint
 WORKDIR /app/
+RUN adduser --disabled-password --gecos '' --shell /bin/bash appuser
+USER appuser
 ENTRYPOINT ["/app/.venv/bin/python", "-m", "docext.app.app", "--no-share", "--ui_port", "7860"]
