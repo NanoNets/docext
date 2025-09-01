@@ -3,15 +3,17 @@
 Convert PDF documents and images to high-quality markdown format using vision-language models.
 
 ## Table of Contents
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Quickstart](#quickstart)
-  - [Installation](#installation)
-  - [Web Interface](#web-interface)
-  - [API Access](#api-access)
-- [Requirements](#requirements)
-- [Supported Models & Platforms](#supported-models--platforms)
-  - [Models with vLLM (Linux)](#models-with-vllm-linux)
+- [PDF to Markdown API Documentation](#pdf-to-markdown-api-documentation)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [Quickstart](#quickstart)
+    - [Installation](#installation)
+    - [Web Interface](#web-interface)
+    - [API Access](#api-access)
+  - [Requirements](#requirements)
+  - [Supported Models \& Platforms](#supported-models--platforms)
+    - [Models with vLLM (Linux)](#models-with-vllm-linux)
 
 ## Features
 
@@ -62,7 +64,7 @@ The interface will be available at `http://localhost:7860` with default credenti
 - Username: `admin`
 - Password: `admin`
 
-Check [Supported Models]() section for more options for the model.
+Check [Supported Models](#supported-models--platforms) section for more options for the model.
 
 ### API Access
 
