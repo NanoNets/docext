@@ -1,24 +1,23 @@
 ## Table of Contents
-- [Getting Started](#Getting-Started)
-  - [Quickstart](#Quickstart)
-  - [Installation](#Installation)
-  - [Web Interface](#Web-Interface)
-  - [API access](#API-access)
-- [Supported Models & Platforms](#Supported-Models-&-Platforms)
-  - [Models with vLLM (Linux)](#Models-with-vLLM-Linux)
-  - [Models with Ollama (Linux and MacOS)](#Models-with-Ollama-Linux-and-MacOS)
-  - [Supported Vendor-Hosted Models](#Supported-Vendor-Hosted-Models)
-- [Docker](#Docker)
-- [About](#About)
-- [Contributing](#Contributing)
-- [Troubleshooting](#Troubleshooting)
+- [Table of Contents](#table-of-contents)
+- [Getting Started](#getting-started)
+  - [Quickstart](#quickstart)
+  - [Installation](#installation)
+  - [Web Interface](#web-interface)
+  - [API access](#api-access)
+- [Requirements](#requirements)
+- [Supported Models \& Platforms](#supported-models--platforms)
+  - [Models with vLLM (Linux)](#models-with-vllm-linux)
+  - [Models with Ollama (Linux and MacOS)](#models-with-ollama-linux-and-macos)
+  - [Supported Vendor-Hosted Models](#supported-vendor-hosted-models)
+- [Docker](#docker)
 
 ## Getting Started
 
 ### Quickstart
 - [Colab notebook for onprem deployment](https://colab.research.google.com/drive/1r1asxGeezfWnJvw8jimfFAB2sGjk1HdM?usp=sharing)
 - [Colab notebook for vendor-hosted models (openai, anthropic, openrouter)](https://colab.research.google.com/drive/1yBnDv_1mZEuNtSMEYc8INGG0Z3UoLakD?usp=sharing)
-- [Docker](https://github.com/NanoNets/docext/blob/main/README.md#Docker)
+- [Docker](#Docker)
 
 ### Installation
 
@@ -38,7 +37,7 @@ git clone https://github.com/nanonets/docext.git
 cd docext
 uv pip install -e .
 ```
-Check [Supported Models](https://github.com/NanoNets/docext/blob/main/README.md#Supported-Models) section for more options.
+Check [Supported Models](#supported-models--platforms) section for more options.
 
 ### Web Interface
 
